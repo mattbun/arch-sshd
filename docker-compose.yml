@@ -1,0 +1,9 @@
+version: '3'
+services:
+  arch-sshd:
+    build: .
+    environment:
+      LOCALE_CONF: "LANG=en_US.UTF-8"
+      LOCALE_GEN: "en_US.UTF-8 UTF-8"
+    ports:
+      - "2200:22"
