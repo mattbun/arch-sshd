@@ -3,8 +3,8 @@ FROM base/archlinux
 # Update all packages
 RUN pacman --noconfirm -Syu
 
-# Install sshd
-RUN pacman --noconfirm -S openssh
+# Install sshd and sudo
+RUN pacman --noconfirm -S openssh sudo
 
 # Tell pacman to clean up
 RUN pacman -Scc
