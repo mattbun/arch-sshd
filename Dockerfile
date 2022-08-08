@@ -1,4 +1,4 @@
-FROM archlinux/base
+FROM archlinux:latest
 
 # Update all packages
 RUN pacman --noconfirm -Syu
